@@ -26,6 +26,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'murr_chat.apps.MurrChatConfig',
+
+    'channels'
 ]
 
 MIDDLEWARE = [
@@ -58,6 +60,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'src.wsgi.application'
+
+ASGI_APPLICATION = 'src.routing.application'
 
 
 # Database
